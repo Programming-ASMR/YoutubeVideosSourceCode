@@ -1,30 +1,18 @@
-import java.util.*;
-
 public class Main{
+
 	public static void main(String[] args){
 
-		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		Rectangle recObj1 = new Rectangle(20, 10);
 
-		numbers.add(5);
-		numbers.add(15);
-		numbers.add(25);
-		numbers.add(15);
-		numbers.add(4);
-		numbers.add(1);
-		numbers.add(221);
-		numbers.add(94);
-		numbers.add(44);
-		numbers.add(-5);
+		System.out.println(recObj1);
 
-		for (int number : numbers){
-			System.out.println(number);
-		}
+		System.out.println("The perimeter is: " + recObj1.getPerimeter());
+		System.out.println("The area is: " + recObj1.getArea());
 
-		System.out.println();
-		Collections.sort(numbers);
+		recObj1.setWidth(1);
+		System.out.println(recObj1);
 
-		for (int number : numbers){
-			System.out.println(number);
-		}
+		System.out.println("The perimeter is: " + recObj1.getPerimeter());
+		System.out.println("The area is: " + recObj1.getArea());
 	}
 }
